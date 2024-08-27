@@ -33,8 +33,8 @@ const checkWinner =()=>{
         };
         if (val1!="" && val2!="" && val3!=""){
             if (val1 == val2 && val1 == val3) { 
-                show(val1);
-            }else if(count==9 && draw==8){
+                return show(val1);
+            }else if(draw==8){
                 winnerMsg.innerText="Match draw";
             };
         };
